@@ -1,14 +1,17 @@
 #!/bin/sh
-if [ $1 == "amd64" ]; then
-    ARCH="64";
-    FNAME="amd64";
-elif [ $1 == "arm64" ]; then
-    ARCH="arm64-v8a"
-    FNAME="arm64";
-else
-    ARCH="64";
-    FNAME="amd64";
-fi
+#if [ $1 == "amd64" ]; then
+#    ARCH="64";
+#    FNAME="amd64";
+#elif [ $1 == "arm64" ]; then
+#    ARCH="arm64-v8a"
+#    FNAME="arm64";
+#else
+#    ARCH="64";
+#    FNAME="amd64";
+#fi
+ARCH="arm64-v8a"
+FNAME="arm64";
+
 mkdir -p build/bin
 cd build/bin
 wget "https://github.com/mhsanaei/xray-core/releases/latest/download/Xray-linux-${ARCH}.zip"
