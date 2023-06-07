@@ -11,6 +11,7 @@
 #fi
 ARCH="arm64-v8a"
 FNAME="arm64";
+echo "https://github.com/mhsanaei/xray-core/releases/latest/download/Xray-linux-${ARCH}.zip"
 
 mkdir -p build/bin
 cd build/bin
